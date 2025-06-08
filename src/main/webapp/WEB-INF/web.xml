@@ -19,6 +19,17 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>index.xhtml</welcome-file>
+        <welcome-file>login.xhtml</welcome-file>
     </welcome-file-list>
+    
+    <!-- 1.Add code classroom  -->
+     <!-- Clic derecho check xtml para saber que vaya bien a nivel de estructura  -->
+    <filter>
+        <filter-name>Filtro</filter-name>
+        <filter-class>security.Filtro</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Filtro</filter-name>
+        <url-pattern>/*</url-pattern> <!-- Lo aplica apra todo el contenido del sitio  -->
+    </filter-mapping>
 </web-app>
